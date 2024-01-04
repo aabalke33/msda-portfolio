@@ -16,4 +16,9 @@ For each, a Jupyter Notebook and PDF version of my analysis is provided, and a v
 | [Decision Tree Classification](https://github.com/aabalke33/msda-portfolio/tree/msda-portfolio/decision-tree-classification) | [Video](https://youtu.be/EMSQYSAos70) |
 | [KMeans Clustering](https://github.com/aabalke33/msda-portfolio/tree/msda-portfolio/kmeans-clustering)                       | [Video](https://youtu.be/lAjpRc8Wb-4) |
 | [Market Basket Analysis](https://github.com/aabalke33/msda-portfolio/tree/msda-portfolio/market-basket)                      | [Video](https://youtu.be/ITkcfkTbGA4) |
+| [Dimensional Reduction](https://github.com/aabalke33/msda-portfolio/tree/msda-portfolio/dimensional-reduction)               | [Video](https://youtu.be/DxkNVDde-Qo) |
+| [Time Series](https://github.com/aabalke33/msda-portfolio/tree/msda-portfolio/time-series)              					   | [Video](https://youtu.be/lgKD4ZgVzOU) |
+| [Natural Language Processing](https://github.com/aabalke33/msda-portfolio/tree/msda-portfolio/natural-language-processing)   | [Video](https://youtu.be/2G2fAF3lKGc) |
+| [Data Reporting](https://github.com/aabalke33/msda-portfolio/tree/msda-portfolio/data-reporting	)              			   | [Video](https://youtu.be/cCM3b2JZ4Ro) |
+| [Data Acquisition](https://github.com/aabalke33/msda-portfolio/tree/msda-portfolio/data-acquisition)              		   | [Video](https://youtu.be/RB0j06XxjT8) |
 |                                                                                                                              |                                       |

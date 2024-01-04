@@ -1,0 +1,2002 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.23.0627.1201                               -->
+<workbook original-version='18.1' source-build='2021.4.19 (20214.23.0627.1201)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='dia_view+ (medical_data)' inline='true' name='federated.0qx12br1f5g53b1aepz6s0gk6enj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='postgres.0xu67821m9n55j18auplt1nljjdj'>
+            <connection authentication='username-password' class='postgres' dbname='medical_data' one-time-sql='' port='5432' server='localhost' username='postgres' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='postgres.0xu67821m9n55j18auplt1nljjdj' name='dia_view' table='[public].[dia_view]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='postgres.0xu67821m9n55j18auplt1nljjdj' name='dia_view' table='[public].[dia_view]' type='table' />
+          <relation connection='postgres.0xu67821m9n55j18auplt1nljjdj' name='wgu_view' table='[public].[wgu_view]' type='table' />
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[age (wgu_view)]' value='[wgu_view].[age]' />
+          <map key='[age]' value='[dia_view].[age]' />
+          <map key='[allhealthy (wgu_view)]' value='[wgu_view].[allhealthy]' />
+          <map key='[allhealthy]' value='[dia_view].[allhealthy]' />
+          <map key='[allunhealthy (wgu_view)]' value='[wgu_view].[allunhealthy]' />
+          <map key='[allunhealthy]' value='[dia_view].[allunhealthy]' />
+          <map key='[diabetes (wgu_view)]' value='[wgu_view].[diabetes]' />
+          <map key='[diabetes]' value='[dia_view].[diabetes]' />
+          <map key='[gender (wgu_view)]' value='[wgu_view].[gender]' />
+          <map key='[gender]' value='[dia_view].[gender]' />
+          <map key='[highblood (wgu_view)]' value='[wgu_view].[highblood]' />
+          <map key='[highblood]' value='[dia_view].[highblood]' />
+          <map key='[overweight (wgu_view)]' value='[wgu_view].[overweight]' />
+          <map key='[overweight]' value='[dia_view].[overweight]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[dia_view]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dia_view_012C6A9D51E549ED9E4CE608F0F38180]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[dia_view]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dia_view_012C6A9D51E549ED9E4CE608F0F38180]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>diabetes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[diabetes]</local-name>
+            <parent-name>[dia_view]</parent-name>
+            <remote-alias>diabetes</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dia_view_012C6A9D51E549ED9E4CE608F0F38180]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>overweight</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[overweight]</local-name>
+            <parent-name>[dia_view]</parent-name>
+            <remote-alias>overweight</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dia_view_012C6A9D51E549ED9E4CE608F0F38180]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>highblood</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[highblood]</local-name>
+            <parent-name>[dia_view]</parent-name>
+            <remote-alias>highblood</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dia_view_012C6A9D51E549ED9E4CE608F0F38180]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>allhealthy</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[allhealthy]</local-name>
+            <parent-name>[dia_view]</parent-name>
+            <remote-alias>allhealthy</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dia_view_012C6A9D51E549ED9E4CE608F0F38180]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>allunhealthy</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[allunhealthy]</local-name>
+            <parent-name>[dia_view]</parent-name>
+            <remote-alias>allunhealthy</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dia_view_012C6A9D51E549ED9E4CE608F0F38180]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[age (wgu_view)]</local-name>
+            <parent-name>[wgu_view]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender (wgu_view)]</local-name>
+            <parent-name>[wgu_view]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>highblood</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[highblood (wgu_view)]</local-name>
+            <parent-name>[wgu_view]</parent-name>
+            <remote-alias>highblood</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>overweight</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[overweight (wgu_view)]</local-name>
+            <parent-name>[wgu_view]</parent-name>
+            <remote-alias>overweight</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>diabetes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[diabetes (wgu_view)]</local-name>
+            <parent-name>[wgu_view]</parent-name>
+            <remote-alias>diabetes</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>allhealthy</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[allhealthy (wgu_view)]</local-name>
+            <parent-name>[wgu_view]</parent-name>
+            <remote-alias>allhealthy</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>allunhealthy</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[allunhealthy (wgu_view)]</local-name>
+            <parent-name>[wgu_view]</parent-name>
+            <remote-alias>allunhealthy</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='dia_view' datatype='table' name='[__tableau_internal_object_id__].[dia_view_012C6A9D51E549ED9E4CE608F0F38180]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='wgu_view' datatype='table' name='[__tableau_internal_object_id__].[wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27]' role='measure' type='quantitative' />
+      <column caption='Age (Wgu View)' datatype='integer' name='[age (wgu_view)]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='Allhealthy (Wgu View)' datatype='string' name='[allhealthy (wgu_view)]' role='dimension' type='nominal' />
+      <column caption='Allhealthy' datatype='string' name='[allhealthy]' role='dimension' type='nominal' />
+      <column caption='Allunhealthy (Wgu View)' datatype='string' name='[allunhealthy (wgu_view)]' role='dimension' type='nominal' />
+      <column caption='Allunhealthy' datatype='string' name='[allunhealthy]' role='dimension' type='nominal' />
+      <column caption='Diabetes (Wgu View)' datatype='string' name='[diabetes (wgu_view)]' role='dimension' type='nominal' />
+      <column caption='Diabetes' datatype='string' name='[diabetes]' role='dimension' type='nominal' />
+      <column caption='Gender (Wgu View)' datatype='string' name='[gender (wgu_view)]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Highblood (Wgu View)' datatype='string' name='[highblood (wgu_view)]' role='dimension' type='nominal' />
+      <column caption='Highblood' datatype='string' name='[highblood]' role='dimension' type='nominal' />
+      <column caption='Overweight (Wgu View)' datatype='string' name='[overweight (wgu_view)]' role='dimension' type='nominal' />
+      <column caption='Overweight' datatype='string' name='[overweight]' role='dimension' type='nominal' />
+      <column-instance column='[allhealthy]' derivation='None' name='[none:allhealthy:nk]' pivot='key' type='nominal' />
+      <column-instance column='[diabetes]' derivation='None' name='[none:diabetes:nk]' pivot='key' type='nominal' />
+      <column-instance column='[highblood (wgu_view)]' derivation='None' name='[none:highblood (wgu_view):nk]' pivot='key' type='nominal' />
+      <column-instance column='[highblood]' derivation='None' name='[none:highblood:nk]' pivot='key' type='nominal' />
+      <column-instance column='[overweight (wgu_view)]' derivation='None' name='[none:overweight (wgu_view):nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:allhealthy:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Yes&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:overweight (wgu_view):nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Yes&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:diabetes:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Yes&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:highblood (wgu_view):nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Yes&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:highblood:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Yes&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='dia_view' id='dia_view_012C6A9D51E549ED9E4CE608F0F38180'>
+            <properties context=''>
+              <relation connection='postgres.0xu67821m9n55j18auplt1nljjdj' name='dia_view' table='[public].[dia_view]' type='table' />
+            </properties>
+          </object>
+          <object caption='wgu_view' id='wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27'>
+            <properties context=''>
+              <relation connection='postgres.0xu67821m9n55j18auplt1nljjdj' name='wgu_view' table='[public].[wgu_view]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[age]' />
+                <expression op='[age (wgu_view)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[allhealthy]' />
+                <expression op='[allhealthy (wgu_view)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[allunhealthy]' />
+                <expression op='[allunhealthy (wgu_view)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[diabetes]' />
+                <expression op='[diabetes (wgu_view)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[gender]' />
+                <expression op='[gender (wgu_view)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[highblood]' />
+                <expression op='[highblood (wgu_view)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[overweight]' />
+                <expression op='[overweight (wgu_view)]' />
+              </expression>
+            </expression>
+            <first-end-point object-id='dia_view_012C6A9D51E549ED9E4CE608F0F38180' />
+            <second-end-point object-id='wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_C52FA3897CE34A48ACEFBD33E87D3471]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Demographic' type='sheet' worksheet='DIA - Overweight' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Demographic' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_24C15C4EDF554E7FB1D875179A931794]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Demographic' type='sheet' worksheet='DIA - High Blood' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Demographic' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_76C61DBF433E45989481A6C7238CEE4B]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Demographic' type='sheet' worksheet='WGU - Overweight' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Demographic' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_26D983BA46E447B0A05FFBBCA9A1E8A9]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Demographic' type='sheet' worksheet='WGU - High Blood' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Demographic' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='DIA - High Blood'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dia_view+ (medical_data)' name='federated.0qx12br1f5g53b1aepz6s0gk6enj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qx12br1f5g53b1aepz6s0gk6enj'>
+            <_.fcp.ObjectModelTableType.false...column caption='dia_view' datatype='integer' name='[__tableau_internal_object_id__].[dia_view_012C6A9D51E549ED9E4CE608F0F38180]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[dia_view_012C6A9D51E549ED9E4CE608F0F38180]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:dia_view_012C6A9D51E549ED9E4CE608F0F38180:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='dia_view' datatype='table' name='[__tableau_internal_object_id__].[dia_view_012C6A9D51E549ED9E4CE608F0F38180]' role='measure' type='quantitative' />
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column caption='Highblood' datatype='string' name='[highblood]' role='dimension' type='nominal' />
+            <column-instance column='[age]' derivation='None' name='[none:age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[highblood]' derivation='None' name='[none:highblood:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[__tableau_internal_object_id__].[cnt:dia_view_012C6A9D51E549ED9E4CE608F0F38180:qk]' scope='rows' value='Count' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:highblood:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[__tableau_internal_object_id__].[cnt:dia_view_012C6A9D51E549ED9E4CE608F0F38180:qk]</rows>
+        <cols>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:age:qk]</cols>
+      </table>
+      <simple-id uuid='{0F0D4779-480E-4E54-97E9-664143DB8849}' />
+    </worksheet>
+    <worksheet name='DIA - Overweight'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dia_view+ (medical_data)' name='federated.0qx12br1f5g53b1aepz6s0gk6enj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qx12br1f5g53b1aepz6s0gk6enj'>
+            <_.fcp.ObjectModelTableType.false...column caption='dia_view' datatype='integer' name='[__tableau_internal_object_id__].[dia_view_012C6A9D51E549ED9E4CE608F0F38180]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[dia_view_012C6A9D51E549ED9E4CE608F0F38180]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:dia_view_012C6A9D51E549ED9E4CE608F0F38180:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='dia_view' datatype='table' name='[__tableau_internal_object_id__].[dia_view_012C6A9D51E549ED9E4CE608F0F38180]' role='measure' type='quantitative' />
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column caption='Diabetes' datatype='string' name='[diabetes]' role='dimension' type='nominal' />
+            <column-instance column='[age]' derivation='None' name='[none:age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[diabetes]' derivation='None' name='[none:diabetes:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[__tableau_internal_object_id__].[cnt:dia_view_012C6A9D51E549ED9E4CE608F0F38180:qk]' scope='rows' value='Count' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:diabetes:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[__tableau_internal_object_id__].[cnt:dia_view_012C6A9D51E549ED9E4CE608F0F38180:qk]</rows>
+        <cols>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:age:qk]</cols>
+      </table>
+      <simple-id uuid='{04E56BF7-6536-426E-916A-90BFAFC1A1FF}' />
+    </worksheet>
+    <worksheet name='DIA AllHealthy'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dia_view+ (medical_data)' name='federated.0qx12br1f5g53b1aepz6s0gk6enj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qx12br1f5g53b1aepz6s0gk6enj'>
+            <_.fcp.ObjectModelTableType.false...column caption='dia_view' datatype='integer' name='[__tableau_internal_object_id__].[dia_view_012C6A9D51E549ED9E4CE608F0F38180]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[dia_view_012C6A9D51E549ED9E4CE608F0F38180]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:dia_view_012C6A9D51E549ED9E4CE608F0F38180:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='dia_view' datatype='table' name='[__tableau_internal_object_id__].[dia_view_012C6A9D51E549ED9E4CE608F0F38180]' role='measure' type='quantitative' />
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column caption='Allhealthy' datatype='string' name='[allhealthy]' role='dimension' type='nominal' />
+            <column-instance column='[age]' derivation='None' name='[none:age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[allhealthy]' derivation='None' name='[none:allhealthy:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:allhealthy:nk]'>
+            <groupfilter function='member' level='[none:allhealthy:nk]' member='&quot;Yes&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:allhealthy:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[__tableau_internal_object_id__].[cnt:dia_view_012C6A9D51E549ED9E4CE608F0F38180:qk]' scope='rows' value='Count' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[__tableau_internal_object_id__].[cnt:dia_view_012C6A9D51E549ED9E4CE608F0F38180:qk]</rows>
+        <cols>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:age:qk]</cols>
+      </table>
+      <simple-id uuid='{A8D30366-30DC-411D-992A-EE6CD7459DBC}' />
+    </worksheet>
+    <worksheet name='DIA AllUnHealthy'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dia_view+ (medical_data)' name='federated.0qx12br1f5g53b1aepz6s0gk6enj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qx12br1f5g53b1aepz6s0gk6enj'>
+            <_.fcp.ObjectModelTableType.false...column caption='dia_view' datatype='integer' name='[__tableau_internal_object_id__].[dia_view_012C6A9D51E549ED9E4CE608F0F38180]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[dia_view_012C6A9D51E549ED9E4CE608F0F38180]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:dia_view_012C6A9D51E549ED9E4CE608F0F38180:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='dia_view' datatype='table' name='[__tableau_internal_object_id__].[dia_view_012C6A9D51E549ED9E4CE608F0F38180]' role='measure' type='quantitative' />
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column caption='Allunhealthy' datatype='string' name='[allunhealthy]' role='dimension' type='nominal' />
+            <column-instance column='[age]' derivation='None' name='[none:age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[allunhealthy]' derivation='None' name='[none:allunhealthy:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:allunhealthy:nk]'>
+            <groupfilter function='member' level='[none:allunhealthy:nk]' member='&quot;Yes&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:allunhealthy:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[__tableau_internal_object_id__].[cnt:dia_view_012C6A9D51E549ED9E4CE608F0F38180:qk]' scope='rows' value='Count' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[__tableau_internal_object_id__].[cnt:dia_view_012C6A9D51E549ED9E4CE608F0F38180:qk]</rows>
+        <cols>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:age:qk]</cols>
+      </table>
+      <simple-id uuid='{ED886A84-C1EA-45BD-A0E5-6A7B2446EABC}' />
+    </worksheet>
+    <worksheet name='DIA Gender'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dia_view+ (medical_data)' name='federated.0qx12br1f5g53b1aepz6s0gk6enj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qx12br1f5g53b1aepz6s0gk6enj'>
+            <_.fcp.ObjectModelTableType.true...column caption='dia_view' datatype='table' name='[__tableau_internal_object_id__].[dia_view_012C6A9D51E549ED9E4CE608F0F38180]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[dia_view_012C6A9D51E549ED9E4CE608F0F38180]' derivation='Count' name='[__tableau_internal_object_id__].[pcto:cnt:dia_view_012C6A9D51E549ED9E4CE608F0F38180:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='dia_view' datatype='integer' name='[__tableau_internal_object_id__].[dia_view_012C6A9D51E549ED9E4CE608F0F38180]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:gender:nk]' />
+              <size column='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[__tableau_internal_object_id__].[pcto:cnt:dia_view_012C6A9D51E549ED9E4CE608F0F38180:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.82359117269515991' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B7D79568-64CB-4B5E-B0BD-749FDFDC5A5F}' />
+    </worksheet>
+    <worksheet name='WGU - High Blood'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dia_view+ (medical_data)' name='federated.0qx12br1f5g53b1aepz6s0gk6enj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qx12br1f5g53b1aepz6s0gk6enj'>
+            <_.fcp.ObjectModelTableType.false...column caption='wgu_view' datatype='integer' name='[__tableau_internal_object_id__].[wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='wgu_view' datatype='table' name='[__tableau_internal_object_id__].[wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27]' role='measure' type='quantitative' />
+            <column caption='Age (Wgu View)' datatype='integer' name='[age (wgu_view)]' role='measure' type='quantitative' />
+            <column caption='Highblood (Wgu View)' datatype='string' name='[highblood (wgu_view)]' role='dimension' type='nominal' />
+            <column-instance column='[age (wgu_view)]' derivation='None' name='[none:age (wgu_view):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[highblood (wgu_view)]' derivation='None' name='[none:highblood (wgu_view):nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[__tableau_internal_object_id__].[cnt:wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27:qk]' scope='rows' value='Count' />
+            <format attr='title' class='0' field='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:age (wgu_view):qk]' scope='cols' value='Age' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:highblood (wgu_view):nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[__tableau_internal_object_id__].[cnt:wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27:qk]</rows>
+        <cols>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:age (wgu_view):qk]</cols>
+      </table>
+      <simple-id uuid='{4C004434-FCC9-434C-B8D1-3B1763B63FA7}' />
+    </worksheet>
+    <worksheet name='WGU - Overweight'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dia_view+ (medical_data)' name='federated.0qx12br1f5g53b1aepz6s0gk6enj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qx12br1f5g53b1aepz6s0gk6enj'>
+            <_.fcp.ObjectModelTableType.false...column caption='wgu_view' datatype='integer' name='[__tableau_internal_object_id__].[wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='wgu_view' datatype='table' name='[__tableau_internal_object_id__].[wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27]' role='measure' type='quantitative' />
+            <column caption='Age (Wgu View)' datatype='integer' name='[age (wgu_view)]' role='measure' type='quantitative' />
+            <column-instance column='[age (wgu_view)]' derivation='None' name='[none:age (wgu_view):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[overweight (wgu_view)]' derivation='None' name='[none:overweight (wgu_view):nk]' pivot='key' type='nominal' />
+            <column caption='Overweight (Wgu View)' datatype='string' name='[overweight (wgu_view)]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[__tableau_internal_object_id__].[cnt:wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27:qk]' scope='rows' value='Count' />
+            <format attr='title' class='0' field='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:age (wgu_view):qk]' scope='cols' value='Age' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:overweight (wgu_view):nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[__tableau_internal_object_id__].[cnt:wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27:qk]</rows>
+        <cols>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:age (wgu_view):qk]</cols>
+      </table>
+      <simple-id uuid='{91EE638D-7BAC-4F7C-A504-D122E3EA54C6}' />
+    </worksheet>
+    <worksheet name='WGU AllHealthy'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dia_view+ (medical_data)' name='federated.0qx12br1f5g53b1aepz6s0gk6enj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qx12br1f5g53b1aepz6s0gk6enj'>
+            <_.fcp.ObjectModelTableType.false...column caption='wgu_view' datatype='integer' name='[__tableau_internal_object_id__].[wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='wgu_view' datatype='table' name='[__tableau_internal_object_id__].[wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27]' role='measure' type='quantitative' />
+            <column caption='Age (Wgu View)' datatype='integer' name='[age (wgu_view)]' role='measure' type='quantitative' />
+            <column caption='Allhealthy (Wgu View)' datatype='string' name='[allhealthy (wgu_view)]' role='dimension' type='nominal' />
+            <column-instance column='[age (wgu_view)]' derivation='None' name='[none:age (wgu_view):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[allhealthy (wgu_view)]' derivation='None' name='[none:allhealthy (wgu_view):nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:allhealthy (wgu_view):nk]'>
+            <groupfilter function='member' level='[none:allhealthy (wgu_view):nk]' member='&quot;Yes&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:allhealthy (wgu_view):nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[__tableau_internal_object_id__].[cnt:wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27:qk]' scope='rows' value='Count' />
+            <format attr='title' class='0' field='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:age (wgu_view):qk]' scope='cols' value='Age' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[__tableau_internal_object_id__].[cnt:wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27:qk]</rows>
+        <cols>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:age (wgu_view):qk]</cols>
+      </table>
+      <simple-id uuid='{9313CDD9-5CD5-4DB5-B574-41FDFED88797}' />
+    </worksheet>
+    <worksheet name='WGU AllUnHealthy'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dia_view+ (medical_data)' name='federated.0qx12br1f5g53b1aepz6s0gk6enj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qx12br1f5g53b1aepz6s0gk6enj'>
+            <_.fcp.ObjectModelTableType.false...column caption='wgu_view' datatype='integer' name='[__tableau_internal_object_id__].[wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='wgu_view' datatype='table' name='[__tableau_internal_object_id__].[wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27]' role='measure' type='quantitative' />
+            <column caption='Age (Wgu View)' datatype='integer' name='[age (wgu_view)]' role='measure' type='quantitative' />
+            <column caption='Allunhealthy (Wgu View)' datatype='string' name='[allunhealthy (wgu_view)]' role='dimension' type='nominal' />
+            <column-instance column='[age (wgu_view)]' derivation='None' name='[none:age (wgu_view):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[allunhealthy (wgu_view)]' derivation='None' name='[none:allunhealthy (wgu_view):nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:allunhealthy (wgu_view):nk]'>
+            <groupfilter function='member' level='[none:allunhealthy (wgu_view):nk]' member='&quot;Yes&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:allunhealthy (wgu_view):nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[__tableau_internal_object_id__].[cnt:wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27:qk]' scope='rows' value='Count' />
+            <format attr='title' class='0' field='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:age (wgu_view):qk]' scope='cols' value='Age' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[__tableau_internal_object_id__].[cnt:wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27:qk]</rows>
+        <cols>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:age (wgu_view):qk]</cols>
+      </table>
+      <simple-id uuid='{2B0D9AF7-FF87-4550-816F-A2B81CC21A91}' />
+    </worksheet>
+    <worksheet name='WGU Gender'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dia_view+ (medical_data)' name='federated.0qx12br1f5g53b1aepz6s0gk6enj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qx12br1f5g53b1aepz6s0gk6enj'>
+            <_.fcp.ObjectModelTableType.false...column caption='wgu_view' datatype='integer' name='[__tableau_internal_object_id__].[wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27]' derivation='Count' name='[__tableau_internal_object_id__].[pcto:cnt:wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <_.fcp.ObjectModelTableType.true...column caption='wgu_view' datatype='table' name='[__tableau_internal_object_id__].[wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27]' role='measure' type='quantitative' />
+            <column caption='Gender (Wgu View)' datatype='string' name='[gender (wgu_view)]' role='dimension' type='nominal' />
+            <column-instance column='[gender (wgu_view)]' derivation='None' name='[none:gender (wgu_view):nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:gender (wgu_view):nk]' />
+              <size column='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[__tableau_internal_object_id__].[pcto:cnt:wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.80160218477249146' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{11E41C48-E79B-4124-9A39-FC32C3E4DE94}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Advanced Data Acquisition' type='storyboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97790' id='1' param='vert' removable='false' type-v2='layout-flow' w='98848' x='576' y='1105'>
+            <zone h='4558' id='3' type-v2='title' w='98848' x='576' y='1105' />
+            <zone h='13950' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98848' x='576' y='5663' />
+            <zone h='79282' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98848' x='576' y='19613'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Demographics' captured-sheet='Demographic' id='1' />
+                  <story-point caption='Extreme KPIs' captured-sheet='Extreme KPI' id='2' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{79277460-AF68-4B54-9703-C904039443FC}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Demographic'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97790' id='23' param='horz' type-v2='layout-flow' w='98698' x='651' y='1105'>
+            <zone h='97790' id='8' type-v2='layout-basic' w='98698' x='651' y='1105'>
+              <zone h='36050' id='5' type-v2='text' w='49308' x='651' y='1105'>
+                <formatted-text>
+                  <run bold='true' fontsize='24'>WGU and DIA Patient Demographic Comparison</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='36050' id='7' name='DIA Gender' w='14891' x='68592' y='1105'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='36050' id='13' name='WGU Gender' w='18633' x='49959' y='1105'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='29420' id='16' name='WGU - Overweight' w='49348' x='651' y='37155'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='18025' id='15' name='WGU Gender' pane-specification-id='0' param='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:gender (wgu_view):nk]' show-title='false' type-v2='color' w='15866' x='83483' y='1105'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='29420' id='17' name='DIA - Overweight' w='49350' x='49999' y='37155'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='32320' id='21' name='WGU - High Blood' w='49348' x='651' y='66575'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='32320' id='25' name='DIA - High Blood' w='49350' x='49999' y='66575'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='18025' id='20' name='DIA - Overweight' pane-specification-id='0' param='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:diabetes:nk]' show-title='false' type-v2='color' w='15866' x='83483' y='19130'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1800' minheight='1800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='38' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='37' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone h='36050' id='5' type-v2='text' w='49308' x='651' y='1105'>
+                  <formatted-text>
+                    <run bold='true' fontsize='24'>WGU and DIA Patient Demographic Comparison</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36050' id='13' is-fixed='true' name='WGU Gender' w='18633' x='49959' y='1105'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='18025' id='15' name='WGU Gender' pane-specification-id='0' param='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:gender (wgu_view):nk]' show-title='false' type-v2='color' w='15866' x='83483' y='1105'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36050' id='7' is-fixed='true' name='DIA Gender' w='14891' x='68592' y='1105'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='228' h='29420' id='16' is-fixed='true' name='WGU - Overweight' w='49348' x='651' y='37155'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='228' h='29420' id='17' is-fixed='true' name='DIA - Overweight' w='49350' x='49999' y='37155'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='18025' id='20' name='DIA - Overweight' pane-specification-id='0' param='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:diabetes:nk]' show-title='false' type-v2='color' w='15866' x='83483' y='19130'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='250' h='32320' id='21' is-fixed='true' name='WGU - High Blood' w='49348' x='651' y='66575'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='250' h='32320' id='25' is-fixed='true' name='DIA - High Blood' w='49350' x='49999' y='66575'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{CD05A485-9731-40D3-8833-590E8FB715AC}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Extreme KPI'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone forceUpdate='true' h='16713' id='3' type-v2='text' w='98698' x='651' y='1105'>
+            <formatted-text>
+              <run bold='true' fontsize='24'>KPIs Patients with all +/- Metrics</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='81077' id='5' name='WGU AllHealthy' w='23271' x='651' y='17818'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='81077' id='6' name='DIA AllHealthy' w='26078' x='23922' y='17818'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='81077' id='7' name='WGU AllUnHealthy' w='24939' x='50000' y='17818'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='81077' id='8' name='DIA AllUnHealthy' w='24410' x='74939' y='17818'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97790' id='17' param='vert' type-v2='layout-flow' w='98698' x='651' y='1105'>
+                <zone forceUpdate='true' h='16713' id='3' type-v2='text' w='98698' x='651' y='1105'>
+                  <formatted-text>
+                    <run bold='true' fontsize='24'>KPIs Patients with all +/- Metrics</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='81077' id='5' is-fixed='true' name='WGU AllHealthy' w='23271' x='651' y='17818'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='81077' id='6' is-fixed='true' name='DIA AllHealthy' w='26078' x='23922' y='17818'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='81077' id='7' is-fixed='true' name='WGU AllUnHealthy' w='24939' x='50000' y='17818'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='81077' id='8' is-fixed='true' name='DIA AllUnHealthy' w='24410' x='74939' y='17818'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D1C99B12-F7AD-4AD7-B040-B7A23CF7CFEE}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Advanced Data Acquisition'>
+      <viewpoints />
+      <active id='2' />
+      <simple-id uuid='{8B7D36E7-71ED-4747-B9B5-AA8015E58432}' />
+    </window>
+    <window class='worksheet' hidden='true' name='DIA - High Blood'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:highblood:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:age:qk]</field>
+            <field>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:highblood:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{30B64B8E-7465-4DBC-89C5-C53B1B5C8245}' />
+    </window>
+    <window class='worksheet' hidden='true' name='DIA - Overweight'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:diabetes:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='vertical'>
+              <node-reference>
+                <axis>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[__tableau_internal_object_id__].[cnt:dia_view_012C6A9D51E549ED9E4CE608F0F38180:qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:age:qk]</field>
+            <field>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:diabetes:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{318B2939-FAA3-442E-9A49-BF87965E3B80}' />
+    </window>
+    <window class='worksheet' hidden='true' name='DIA AllHealthy'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='vertical'>
+              <node-reference>
+                <axis>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[__tableau_internal_object_id__].[cnt:dia_view_012C6A9D51E549ED9E4CE608F0F38180:qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:allhealthy:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9E8F879F-D1BE-43FC-931E-890BFDAFF796}' />
+    </window>
+    <window class='worksheet' hidden='true' name='DIA AllUnHealthy'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='vertical'>
+              <node-reference>
+                <axis>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[__tableau_internal_object_id__].[cnt:dia_view_012C6A9D51E549ED9E4CE608F0F38180:qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:allunhealthy:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{92AC401C-EBBB-4C8B-92CF-A4AF26AF1202}' />
+    </window>
+    <window class='worksheet' hidden='true' name='DIA Gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[__tableau_internal_object_id__].[pcto:cnt:dia_view_012C6A9D51E549ED9E4CE608F0F38180:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:gender:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4C5BAD43-7866-46AC-9B28-E2D6B46AA057}' />
+    </window>
+    <window class='dashboard' hidden='true' name='Demographic'>
+      <viewpoints>
+        <viewpoint name='DIA - High Blood'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:highblood:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='DIA - Overweight'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:diabetes:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='DIA Gender' />
+        <viewpoint name='WGU - High Blood'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='WGU - Overweight'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='WGU Gender'>
+          <highlight field='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:gender (wgu_view):nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{D8F63F46-3AF7-4832-A1B1-47D943E638B0}' />
+    </window>
+    <window class='dashboard' hidden='true' name='Extreme KPI'>
+      <viewpoints>
+        <viewpoint name='DIA AllHealthy'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='DIA AllUnHealthy'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='WGU AllHealthy'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='WGU AllUnHealthy'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{42336B69-B2E4-4442-AD71-2661DDACC868}' />
+    </window>
+    <window class='worksheet' hidden='true' name='WGU - High Blood'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:highblood (wgu_view):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <axis>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:age (wgu_view):qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:age:qk]</field>
+            <field>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:highblood (wgu_view):nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1F282576-3E29-4ABE-8D7A-1A334E5F062B}' />
+    </window>
+    <window class='worksheet' hidden='true' name='WGU - Overweight'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:overweight (wgu_view):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <axis>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:age (wgu_view):qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:age:qk]</field>
+            <field>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:overweight (wgu_view):nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{821097A6-6715-4A04-9483-547378EC2CEE}' />
+    </window>
+    <window class='worksheet' hidden='true' name='WGU AllHealthy'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <axis>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:age (wgu_view):qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:allhealthy (wgu_view):nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F7880803-8CC6-4B06-A442-E7D123F07224}' />
+    </window>
+    <window class='worksheet' hidden='true' name='WGU AllUnHealthy'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <axis>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:age (wgu_view):qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:allunhealthy (wgu_view):nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6F2C78D0-5FEA-436A-8C7D-06493FD6DD57}' />
+    </window>
+    <window class='worksheet' hidden='true' name='WGU Gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[__tableau_internal_object_id__].[pcto:cnt:wgu_view_FBD2BA2CCD4A429695C596BBA7EF8C27:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:gender (wgu_view):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qx12br1f5g53b1aepz6s0gk6enj].[none:gender (wgu_view):nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D34E09DA-5D6E-4F9C-A7B5-0495B96EB9C8}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Advanced Data Acquisition' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

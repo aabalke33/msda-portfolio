@@ -1,7 +1,7 @@
 # Masters of Data Analytics Portfolio
 
-I am currently finishing up my Masters in Science, Data Analytics at Western Governors University.
-This portfolio is to present my current work and abilities.
+I completed my Master of Science in Data Analytics at Western Governors University in January 2024.
+This portfolio is to present the highlights of my work and abilities.
 
 Each directory represents an analysis project.
 For each, a Jupyter Notebook and PDF version of my analysis is provided, and a video breakdown is available as well
@@ -10,6 +10,7 @@ For each, a Jupyter Notebook and PDF version of my analysis is provided, and a v
 
 | Project (Files & WriteUp)                                                                                                    | Presentation                          |
 |------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
+| [Capstone: Paired T-Testing & TBATS Time Series](https://github.com/aabalke33/msda-portfolio/tree/msda-portfolio/capstone)   | [Video](https://youtu.be/wMvnZnSEaKI) |
 | [Linear Regression Modeling](https://github.com/aabalke33/msda-portfolio/tree/msda-portfolio/linear-regression)              | [Video](https://youtu.be/cAhz5rzJsEM) |
 | [Logistic Regression Modeling](https://github.com/aabalke33/msda-portfolio/tree/msda-portfolio/logistic-regression)          | [Video](https://youtu.be/LWugYhTZ4xc) |
 | [KNN Classification](https://github.com/aabalke33/msda-portfolio/tree/msda-portfolio/knn-classification)                     | [Video](https://youtu.be/OUIPS64XOew) |
